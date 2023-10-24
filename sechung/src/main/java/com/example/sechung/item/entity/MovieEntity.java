@@ -23,7 +23,8 @@ import lombok.NoArgsConstructor;
 @DiscriminatorValue("M")
 @NoArgsConstructor(access = lombok.AccessLevel.PROTECTED)
 @Getter
-public class MovieEntity {
+public class MovieEntity extends ItemEntity {
+
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   @Id
   private Long id;

@@ -12,12 +12,12 @@ spring:
   profiles:
     include: env
   jpa:
-    defer-datasource-initialization: true
+    defer-datasource-initialization: false
     show-sql: false
-    generate-ddl: false
+    generate-ddl: true
     open-in-view: false
     hibernate:
-      ddl-auto: none #for h2
+      ddl-auto: create-drop #for h2
 #      ddl-auto: validate #for mariadb
       type: trace
 logging:

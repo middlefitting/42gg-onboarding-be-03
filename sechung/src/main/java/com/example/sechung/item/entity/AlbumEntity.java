@@ -20,10 +20,10 @@ import lombok.Getter;
  * @since : 2023/10/24
  */
 @Entity
-@Table(name = "album")
 @DiscriminatorValue("A")
 @Getter
-public class AlbumEntity {
+public class AlbumEntity extends ItemEntity {
+
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   @Id
   private Long id;
